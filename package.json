@@ -4,7 +4,8 @@
   "description": "Collection of the AOC solutions",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "lint": "eslint . --ext .ts"
   },
   "repository": {
     "type": "git",
@@ -17,20 +18,20 @@
   },
   "homepage": "https://github.com/wimcraft/advent-of-code#readme",
   "dependencies": {
-    "@types/node": "^11.9.4",
-    "@types/ramda": "^0.25.50",
-    "chalk": "^2.4.2",
-    "ramda": "^0.26.1",
-    "ts-node": "^8.0.2",
-    "tslint": "^5.12.1",
-    "typescript": "^3.3.3"
+    "@types/node": "^20.11.5",
+    "@types/ramda": "^0.29.9",
+    "chalk": "^5.3.0",
+    "ramda": "^0.29.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "ava": "^2.4.0",
-    "typescript-eslint-parser": "^22.0.0"
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "ava": "^6.0.1",
+    "eslint": "^8.56.0"
   },
   "ava": {
-    "compileEnhancements": false,
     "extensions": [
       "ts"
     ],
